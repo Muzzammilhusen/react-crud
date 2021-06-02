@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import india from '../images/india.jpg';
+import india from '../images/india.png';
 
 const ContactDetail = (props) => {
     // console.log(props); individual contact detail object
@@ -18,7 +18,9 @@ const ContactDetail = (props) => {
             </div>
             <div className="center-div">
                 <Link to="/">
-                    <button className="ui floated button blue center ">Back to Contact List</button>
+                    <button className="ui button blue center">
+                        Back to Contact List
+                    </button>
                 </Link>
             </div>
         </div>

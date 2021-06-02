@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import user from '../images/user.jpg';
+import user from '../images/user.png';
 
 const CardContact = (props) => {
 
@@ -15,8 +15,15 @@ const CardContact = (props) => {
                 </Link>
             </div>
             <i className="trash alternate outline icon right floated"
-                style={{ color: " red", marginTop: "7px" }}
-                onClick={() => props.clickHandler(id)}></i>
+                style={{ color: " red", marginTop: "7px", marginLeft: "10px" }}
+                onClick={() => props.clickHandler(id)}>
+            </i>
+            <Link to={{ pathname: `/edit`, state: { contact: props.contact } }}>
+                <i className="edit alternate outline icon right floated"
+                    style={{ color: " blue", marginTop: "7px" }}
+                >
+                </i>
+            </Link>
         </div >
     );
 };

@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <div className="ui segment">
             <div className="ui container center aligned">
-                <h2>Contact App</h2>
+                <h1>Contact App</h1>
             </div>
         </div>
     );
